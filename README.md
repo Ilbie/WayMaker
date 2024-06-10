@@ -43,7 +43,7 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
 ## 설치 및 실행 방법
 1. 저장소를 클론합니다:
     ```sh
-    git clone https://github.com/your-repo/WayMaker.git
+    git clone https://github.com/Ilbie/WayMaker.git
     ```
 2. 필요한 라이브러리를 설치합니다:
     ```sh
