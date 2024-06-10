@@ -16,9 +16,14 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
 
 ## 기능
 
+### 데이터 수집
+웹사이트에서 클로링하여 데이터을 전처리 및 수정 합니다
+- **사용 파일:** `Convert-files.py`, `crawling.py`, `face-Focusing.py`
+- **기술:** MTCNN,OpenCV
+
 ### 사용자 관상 분석
 사용자의 얼굴을 분석하여 특정한 특징들을 추출합니다. 이를 위해 OpenCV와 같은 얼굴 인식 라이브러리를 사용하며, 심층 학습을 통해 관상 데이터를 학습하고 분석합니다.
-- **사용 파일:** `face-Focusing.py`, `Deep-learning.py`
+- **사용 파일:** `Deep-learning.py`
 - **기술:** OpenCV, pytoach 등
 
 ### 사용자 MBTI 분석
@@ -28,7 +33,7 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
 
 ### 맞춤형 노래 추천
 스포티파이 API를 사용하여 사용자에게 맞춤형 노래를 추천합니다. 관상과 MBTI 분석 결과를 종합하여 사용자에게 최적의 노래 리스트를 제공합니다.
-- **사용 파일:** `Convert-files.py`, `crawling.py`
+- **사용 파일:** 
 - **기술:** Spotify API, Web Crawling
 
 ## 사용 기술
@@ -40,7 +45,7 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
     ```sh
     git clone https://github.com/your-repo/WayMaker.git
     ```
-2. 필요한 라이브러리를 설치합니다(제작중):
+2. 필요한 라이브러리를 설치합니다:
     ```sh
     pip install -r requirements.txt
     ```
