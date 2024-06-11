@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.waymaker.frontend.MBTIFinderController"
+      spacing="10" alignment="center">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="사진을 업로드하여 MBTI를 찾아보세요" />
+    <ImageView fx:id="imageView" fitWidth="300" fitHeight="300" preserveRatio="true"/>
+    <Button text="사진 업로드" onAction="#handleUpload"/>
+    <Label fx:id="resultLabel" text="나의 MBTI: "/>
+</VBox>

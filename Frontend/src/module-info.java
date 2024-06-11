@@ -2,7 +2,6 @@ module com.waymaker.frontend {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
-    requires javafx.swing;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
@@ -12,6 +11,6 @@ module com.waymaker.frontend {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.waymaker to javafx.fxml;
-    exports com.waymaker;
+    exports com.waymaker.frontend;
+    opens com.waymaker.frontend to javafx.fxml;
 }
