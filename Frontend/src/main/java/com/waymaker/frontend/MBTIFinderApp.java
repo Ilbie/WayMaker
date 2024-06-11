@@ -12,7 +12,7 @@ public class MBTIFinderApp extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/waymaker/frontend/main.fxml"));
         Scene scene = new Scene(loader.load());
         primaryStage.setScene(scene);
-        primaryStage.setTitle("WayMaker");
+        primaryStage.setTitle("Waymaker");
         primaryStage.show();
     }
 

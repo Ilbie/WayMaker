@@ -17,14 +17,14 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
 ## 기능
 
 ### 데이터 수집
-웹사이트에서 클로링하여 데이터을 전처리 및 수정 합니다
+웹사이트에서 크롤링하여 데이터를 전처리 및 수정합니다.
 - **사용 파일:** `Convert-files.py`, `crawling.py`, `face-Focusing.py`
-- **기술:** MTCNN,OpenCV
+- **기술:** MTCNN, OpenCV
 
 ### 사용자 관상 분석
 사용자의 얼굴을 분석하여 특정한 특징들을 추출합니다. 이를 위해 OpenCV와 같은 얼굴 인식 라이브러리를 사용하며, 심층 학습을 통해 관상 데이터를 학습하고 분석합니다.
 - **사용 파일:** `Deep-learning.py`
-- **기술:** OpenCV, pytoach 등
+- **기술:** OpenCV, PyTorch 등
 
 ### 사용자 MBTI 분석
 사용자가 입력한 MBTI 정보를 바탕으로 성격 유형을 분석합니다. 이 정보를 통해 사용자에게 더 적합한 음악을 추천할 수 있습니다.
@@ -45,14 +45,10 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
     ```sh
     git clone https://github.com/Ilbie/WayMaker.git
     ```
+
 2. 필요한 라이브러리를 설치합니다:
     ```sh
     pip install -r requirements.txt
     ```
-3. 애플리케이션을 실행합니다(제작중):
-    ```sh
-    java -jar WayMaker.jar
-    ```
+3. JavaFX 라이브러리를 포함하여 Java 프로젝트를 설정합니다. [OpenJFX](https://openjfx.io)에서 17.0.11 JavaFX SDK를 다운로드하고, 프로젝트의 라이브러리에 추가합니다.
 
-## 기여 방법
-기여를 원하시는 분은 저장소를 포크하고 풀 리퀘스트를 보내주세요. 오류 보고나 기능 제안은 이슈 트래커를 이용해주세요.
