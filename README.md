@@ -31,7 +31,7 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
 
 ### 사용자 관상 분석
 사용자의 얼굴을 분석하여 특정한 특징들을 추출합니다. 이를 위해 OpenCV와 같은 얼굴 인식 라이브러리를 사용하며, 심층 학습을 통해 관상 데이터를 학습하고 분석합니다.
-- **사용 파일:** `Deep-learning.py`
+- **사용 파일:** `Deep-learning.py` [![Colab 열기](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ilbie/WayMaker/blob/main/Deep_learning.ipynb)
 - **기술:** OpenCV, PyTorch 등
 
 ### 사용자 MBTI 분석
@@ -76,6 +76,9 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
 7. Maven을 사용하여 프로젝트를 빌드하고 실행합니다:
     ```sh
     mvn clean javafx:run
+    ```
+    ```
+    Shift + F10
     ```
 
 ### 백엔드 설치 및 실행
