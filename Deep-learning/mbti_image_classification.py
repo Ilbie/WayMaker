@@ -23,7 +23,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 model = model.to(device)
 
 # 저장된 모델 가중치 로드
-best_model_path = '../Backend/model/best_model.pth'  # 저장된 모델 가중치 경로 설정
+best_model_path = './Backend/model/best_model.pth'  # 저장된 모델 가중치 경로 설정
 model.load_state_dict(torch.load(best_model_path, map_location=device))
 model.eval()
 
@@ -41,6 +41,6 @@ def predict_image(image_path):
     return classes[predicted.item()]
 
 # 새로운 이미지에 대한 추론 실행
-image_path = '../example2.jpg'
+image_path = './example2.jpg'
 prediction = predict_image(image_path)
 print(f'Predicted MBTI type: {prediction}')

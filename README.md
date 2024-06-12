@@ -2,6 +2,11 @@
 
 **WayMaker**는 사용자의 관상과 MBTI를 분석하여, 그에 맞는 노래를 스포티파이를 통해 추천해주는 자바 애플리케이션입니다.
 
+![WayMaker]()
+
+[![라이센스: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/Ilbie/WayMaker/blob/main/LICENSE)
+[![Colab 열기](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ilbie/WayMaker/blob/main/Deep_learning.ipynb)
+
 ## 목차
 1. [프로젝트 소개](#프로젝트-소개)
 2. [기능](#기능)
@@ -10,6 +15,9 @@
     3. [맞춤형 노래 추천](#맞춤형-노래-추천)
 3. [사용 기술](#사용-기술)
 4. [설치 및 실행 방법](#설치-및-실행-방법)
+    1. [프론트엔드 설치 및 실행](#프론트엔드-설치-및-실행)
+    2. [백엔드 설치 및 실행](#백엔드-설치-및-실행)
+5. [Google Colab에서 실행](#google-colab에서-실행)
 
 ## 프로젝트 소개
 WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 추천하는 자바 애플리케이션입니다. 이를 통해 사용자들은 자신에게 어울리는 음악을 더 쉽게 찾을 수 있습니다.
@@ -41,14 +49,48 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
 - **라이브러리 및 프레임워크:** OpenCV, PyTorch, Spotify API
 
 ## 설치 및 실행 방법
-1. 저장소를 클론합니다:
+
+### 프론트엔드 설치 및 실행
+
+1. 저장소를 복제합니다:
     ```sh
     git clone https://github.com/Ilbie/WayMaker.git
     ```
 
-2. 필요한 라이브러리를 설치합니다:
+2. 자바 JDK 17을 설치합니다.
+
+3. 프로젝트를 엽니다:
     ```sh
+    cd WayMaker/Frontend
+    ```
+
+4. Java 프로젝트 설정:
+    - [OpenJFX](https://openjfx.io)에서 JavaFX SDK 17.0.11을 다운로드하고 압축을 해제한 후, C:\ 루트 디렉토리에 옮깁니다.
+
+5. Intellij IDEA에서 프로젝트를 엽니다.
+    - `File` > `Project Structure` > `Libraries`에서 `+` 버튼을 클릭하여 JavaFX SDK를 추가합니다.
+    - 다운로드한 JavaFX SDK의 `lib` 폴더를 선택하여 라이브러리를 추가합니다.
+
+6. `pom.xml` 파일을 프로젝트의 루트 디렉토리에 추가합니다. 이는 프로젝트의 Maven 설정 파일입니다. 이미 제공된 파일을 참고합니다.
+
+7. Maven을 사용하여 프로젝트를 빌드하고 실행합니다:
+    ```sh
+    mvn clean javafx:run
+    ```
+
+### 백엔드 설치 및 실행
+
+1. 필요한 파이썬 라이브러리를 설치합니다:
+    ```sh
+    cd WayMaker
     pip install -r requirements.txt
     ```
-3. JavaFX 라이브러리를 포함하여 Java 프로젝트를 설정합니다. [OpenJFX](https://openjfx.io)에서 17.0.11 JavaFX SDK를 다운로드하고, 프로젝트의 라이브러리에 추가합니다.
+
+2. 백엔드 디렉토리로 이동하여 API 서버를 실행합니다:
+    ```sh
+    cd Backend
+    python api.py
+    ```
+
+---
 
