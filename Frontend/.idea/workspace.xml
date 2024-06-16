@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c073f09-5e9a-4d20-94d5-fa1ffda3e9ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.env" beforeDir="false" afterPath="$PROJECT_DIR$/../.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MBTIFinderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MBTIFinderApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MusicPlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MusicPlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/music_player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/music_player.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="3c073f09-5e9a-4d20-94d5-fa1ffda3e9ff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
