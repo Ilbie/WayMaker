@@ -4,6 +4,8 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
+import javafx.util.Duration;
 
 import java.util.List;
 import java.util.Map;
@@ -36,12 +38,10 @@ public class MusicPlayerController {
     private int currentSongIndex = 0;
     private boolean isRepeat = false;
     private boolean isShuffle = false;
-    private Timer timer;
     private MBTIFinderController mbtiFinderController;
 
     public void initialize() {
         mp3Player = new MP3Player();
-        timer = new Timer();
 
         nextButton.setOnAction(event -> playNextSong());
         prevButton.setOnAction(event -> playPreviousSong());
@@ -90,7 +90,7 @@ public class MusicPlayerController {
         } else {
             mp3Player.resume();
             isPlaying = true;
-            playButton.setText("일시 정지");
+            playButton.setText("일시정지");
         }
     }
 
@@ -103,7 +103,7 @@ public class MusicPlayerController {
         if (songList != null && !songList.isEmpty()) {
             String previewUrl = songList.get(currentSongIndex).get("preview_url");
             if (previewUrl == null) {
-                System.err.println("미리보기 URL이 null입니다: " + currentSongIndex);
+                System.err.println("Preview URL is null for song at index " + currentSongIndex);
                 return;
             }
 
@@ -113,7 +113,7 @@ public class MusicPlayerController {
             mp3Player.stop();
             mp3Player.play(previewUrl);
             isPlaying = true;
-            playButton.setText("일시 정지");
+            playButton.setText("일시정지");
             mbtiFinderController.updateSongListView(currentSongIndex);
         }
     }

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.waymaker.frontend.MusicPlayerController" alignment="CENTER" spacing="10">
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.waymaker.frontend.MusicPlayerController" alignment="CENTER" spacing="10" styleClass="root">
     <HBox alignment="CENTER" spacing="10">
         <Button fx:id="shuffleButton" text="🔀"/>
         <Button fx:id="prevButton" text="⏮"/>

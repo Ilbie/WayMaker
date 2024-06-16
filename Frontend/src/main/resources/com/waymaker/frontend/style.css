@@ -1,71 +1,66 @@
+/* General styling */
 .root {
-    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    -fx-background-color: #2e2e2e;
+    -fx-background-color: #2c2f33;
     -fx-padding: 20;
-}
-
-.label {
+    -fx-font-size: 16px;
     -fx-text-fill: #ffffff;
-    -fx-font-size: 18px;
 }
 
+/* Button styling */
 .button {
-    -fx-background-color: #3a3a3a;
+    -fx-background-color: #7289da;
     -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
     -fx-padding: 10 20;
-    -fx-border-radius: 15;
-    -fx-background-radius: 15;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+    -fx-background-radius: 5;
 }
 
 .button:hover {
-    -fx-background-color: #505050;
+    -fx-background-color: #99aab5;
 }
 
+/* ComboBox styling */
 .combo-box {
-    -fx-background-color: #3a3a3a;
+    -fx-background-color: #23272a;
     -fx-text-fill: #ffffff;
-    -fx-padding: 10 20;
-    -fx-border-radius: 15;
-    -fx-background-radius: 15;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
-}
-
-.image-view {
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 20, 0, 0, 10);
-    -fx-padding: 20;
-}
-
-.list-view {
-    -fx-background-color: #3a3a3a;
-    -fx-text-fill: #ffffff;
-    -fx-padding: 10 20;
-    -fx-border-radius: 15;
-    -fx-background-radius: 15;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
-}
-
-.vbox, .hbox {
-    -fx-spacing: 10;
-    -fx-alignment: center;
-}
-
-.progress-bar {
-    -fx-accent: #00ff00;
-    -fx-background-color: #3a3a3a;
-    -fx-border-radius: 15;
-    -fx-background-radius: 15;
-}
-
-.song-list-cell {
-    -fx-background-color: #3a3a3a;
-    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
     -fx-padding: 10;
-    -fx-border-radius: 15;
-    -fx-background-radius: 15;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+    -fx-background-radius: 5;
 }
 
-.song-list-cell:selected {
-    -fx-background-color: #505050;
+.combo-box:hover {
+    -fx-background-color: #7289da;
+}
+
+/* ListView styling */
+.list-view {
+    -fx-background-color: #23272a;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-background-radius: 5;
+}
+
+.list-cell {
+    -fx-background-color: #23272a;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+}
+
+.list-cell:hover {
+    -fx-background-color: #7289da;
+}
+
+/* Label styling */
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+}
+
+/* ProgressBar styling */
+.progress-bar {
+    -fx-accent: linear-gradient(to right, #4caf50, #f44336);
+    -fx-background-radius: 5;
+    -fx-padding: 5;
 }

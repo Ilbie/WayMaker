@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.waymaker.frontend.MBTIFinderController"
-      spacing="10" alignment="center">
+      spacing="10" alignment="center" styleClass="root">
     <padding>
         <Insets top="20" right="20" bottom="20" left="20"/>
     </padding>

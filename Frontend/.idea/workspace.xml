@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c073f09-5e9a-4d20-94d5-fa1ffda3e9ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MP3Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MusicPlayerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/music_player.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/미리보기.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/model/best_model.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Deep-learning/Deep-learning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Deep-learning/mbti_image_classification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.env" beforeDir="false" afterPath="$PROJECT_DIR$/../.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MBTIFinderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MBTIFinderApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MBTIFinderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MBTIFinderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MusicPlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MusicPlayerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/music_player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/music_player.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +51,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ilbie\Desktop\WayMaker\Frontend\src\main\resources\com\waymaker\frontend" />
+      <recent name="C:\Users\ilbie\Desktop\WayMaker\Frontend\src\main\resources\fonts" />
       <recent name="C:\Users\ilbie\Desktop\WayMaker\Frontend\src\main\java" />
       <recent name="C:\Users\ilbie\Desktop\WayMaker\Frontend\src" />
       <recent name="C:\Users\ilbie\Desktop\WayMaker\Frontend\src\main\java\com\waymaker\frontend" />
-      <recent name="C:\Users\ilbie\Desktop\WayMaker\Frontend\src\main" />
-      <recent name="C:\Users\ilbie\Desktop\WayMaker\Frontend\src\main\resources\com\waymaker\frontend" />
     </key>
   </component>
   <component name="RunManager">
