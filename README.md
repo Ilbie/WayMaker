@@ -7,8 +7,10 @@
 [![라이센스: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/Ilbie/WayMaker/blob/main/LICENSE)
 [![Colab 열기](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ilbie/WayMaker/blob/main/Deep_learning.ipynb)
 
-![ResNet18다운로드](https://huggingface.co/newbie2022/mbti/resolve/main/ResNet18.pth?download=true)
-![ResNet50다운로드](https://huggingface.co/newbie2022/mbti/resolve/main/ResNet50.pth?download=true)
+## 모델 다운로드
+아래 링크를 클릭하여 ResNet18 및 ResNet50 모델 파일을 다운로드하십시오:
+- [ResNet18 다운로드](https://huggingface.co/newbie2022/mbti/resolve/main/ResNet18.pth?download=true)
+- [ResNet50 다운로드](https://huggingface.co/newbie2022/mbti/resolve/main/ResNet50.pth?download=true)
 
 ## 목차
 1. [프로젝트 소개](#프로젝트-소개)
