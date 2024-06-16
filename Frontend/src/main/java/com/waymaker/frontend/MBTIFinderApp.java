@@ -10,9 +10,9 @@ public class MBTIFinderApp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/waymaker/frontend/main.fxml"));
-        Scene scene = new Scene(loader.load());
+        Scene scene = new Scene(loader.load(), 800, 1200);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Waymaker");
+        primaryStage.setTitle("WonderWall");
         primaryStage.show();
     }
 

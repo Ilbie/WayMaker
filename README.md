@@ -1,8 +1,8 @@
-# WayMaker
+# WayMaker(프로젝트 이름)
 
-**WayMaker**는 사용자의 관상과 MBTI를 분석하여, 그에 맞는 노래를 스포티파이를 통해 추천해주는 자바 애플리케이션입니다.
+**WonderWall**는 사용자의 관상과 MBTI를 분석하여, 그에 맞는 노래를 스포티파이를 통해 추천해주는 자바 애플리케이션입니다.
 
-![WayMaker]()
+![WonderWall](Wonderwall.png)
 
 [![라이센스: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/Ilbie/WayMaker/blob/main/LICENSE)
 [![Colab 열기](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ilbie/WayMaker/blob/main/Deep_learning.ipynb)
@@ -20,7 +20,7 @@
 5. [Google Colab에서 실행](#google-colab에서-실행)
 
 ## 프로젝트 소개
-WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 추천하는 자바 애플리케이션입니다. 이를 통해 사용자들은 자신에게 어울리는 음악을 더 쉽게 찾을 수 있습니다.
+WayMaker(WonderWall)는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 추천하는 자바 애플리케이션입니다. 이를 통해 사용자들은 자신에게 어울리는 음악을 더 쉽게 찾을 수 있습니다.
 
 ## 기능
 
@@ -61,7 +61,7 @@ WayMaker는 관상과 MBTI를 기반으로 사용자에게 맞춤형 노래를 �
 
 3. 프로젝트를 엽니다:
     ```sh
-    cd WayMaker/Frontend
+    WayMaker/Frontend
     ```
 
 4. Java 프로젝트 설정:

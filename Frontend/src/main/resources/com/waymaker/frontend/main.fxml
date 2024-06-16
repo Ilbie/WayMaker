@@ -2,7 +2,9 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
 
@@ -11,8 +13,14 @@
     <padding>
         <Insets top="20" right="20" bottom="20" left="20"/>
     </padding>
-    <Label text="사진을 업로드하여 MBTI를 찾아보세요" />
-    <ImageView fx:id="imageView" fitWidth="300" fitHeight="300" preserveRatio="true"/>
+    <Label text="사진을 업로드하여 MBTI를 찾아보세요" style="-fx-font-size: 36px"/>
+    <ImageView fx:id="imageView" fitWidth="400" fitHeight="400" preserveRatio="true"/>
+    <ComboBox fx:id="modelSelector"/>
     <Button text="사진 업로드" onAction="#handleUpload"/>
-    <Label fx:id="resultLabel" text="나의 MBTI: "/>
+    <Label fx:id="highestMbtiLabel" text="" style="-fx-font-size: 32px; -fx-font-weight: bold;"/>
+    <Label fx:id="highestMbtiDescription" text="" wrapText="true" style="-fx-font-size: 18px; -fx-text-alignment: center;"/>
+    <VBox fx:id="resultContainer" spacing="5" alignment="center"/>
+    <Label text="추천 노래 목록" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <ListView fx:id="songListView" prefHeight="200" prefWidth="400"/>
+    <VBox fx:id="musicPlayerContainer" spacing="10" alignment="center"/>
 </VBox>
