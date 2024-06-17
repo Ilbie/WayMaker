@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Frontend:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c073f09-5e9a-4d20-94d5-fa1ffda3e9ff" name="Changes" comment="" />
+    <list default="true" id="3c073f09-5e9a-4d20-94d5-fa1ffda3e9ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Frontend_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.env" beforeDir="false" afterPath="$PROJECT_DIR$/../.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/model/여기 모델 파일" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MBTIFinderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/waymaker/frontend/MBTIFinderApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/music_player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/waymaker/frontend/music_player.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,17 +44,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/javafx-sdk-17.0.11/lib&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/javafx-sdk-17.0.11/lib",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15917969",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ilbie\Desktop\WayMaker\Frontend\src\main\resources\com\waymaker\frontend" />

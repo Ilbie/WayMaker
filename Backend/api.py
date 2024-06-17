@@ -91,35 +91,74 @@ def predict_image(image: Image.Image, temperature: float = 1.0):
         logger.error("Error creating probabilities dictionary: %s", str(e))
         raise RuntimeError("Error creating probabilities dictionary.")
 
-# Spotify 노래 추천 함수
-def recommend_songs(mbti: str, limit: int = 5):
+# Spotify 노래 추천 함수 (다양성 추가 및 한국어 인기 노래 집중)
+def recommend_songs(mbti: str, mbti_score: dict, limit: int = 5):
     try:
-        # MBTI 유형에 따른 추천 장르 설정
         mbti_genres = {
-            'ENFJ': 'pop',
-            'ENFP': 'indie',
-            'ENTJ': 'rock',
-            'ENTP': 'electronic',
-            'ESFJ': 'dance',
-            'ESFP': 'party',
-            'ESTJ': 'classical',
-            'ESTP': 'hip-hop',
-            'INFJ': 'ambient',
-            'INFP': 'folk',
-            'INTJ': 'jazz',
-            'INTP': 'blues',
-            'ISFJ': 'acoustic',
-            'ISFP': 'singer-songwriter',
-            'ISTJ': 'country',
-            'ISTP': 'reggae'
+            'ENFJ': ['k-pop', 'k-ballad', 'k-indie'],
+            'ENFP': ['k-indie', 'k-acoustic', 'k-pop'],
+            'ENTJ': ['k-rock', 'k-metal', 'k-pop'],
+            'ENTP': ['k-electronic', 'k-hip-hop', 'k-pop'],
+            'ESFJ': ['k-dance', 'k-pop', 'k-ballad'],
+            'ESFP': ['k-pop', 'k-dance', 'k-hip-hop'],
+            'ESTJ': ['k-classical', 'k-orchestral', 'k-pop'],
+            'ESTP': ['k-hip-hop', 'k-rap', 'k-pop'],
+            'INFJ': ['k-chill', 'k-ambient', 'k-pop'],
+            'INFP': ['k-folk', 'k-acoustic', 'k-indie'],
+            'INTJ': ['k-jazz', 'k-blues', 'k-pop'],
+            'INTP': ['k-blues', 'k-rock', 'k-pop'],
+            'ISFJ': ['k-acoustic', 'k-ballad', 'k-pop'],
+            'ISFP': ['k-singer-songwriter', 'k-indie', 'k-pop'],
+            'ISTJ': ['k-country', 'k-folk', 'k-pop'],
+            'ISTP': ['k-reggae', 'k-ska', 'k-pop']
         }
 
-        genre = mbti_genres.get(mbti, 'pop')
-        results = spotify.search(q=f'genre:{genre}', type='track', limit=limit)
-        tracks = results['tracks']['items']
-        song_recommendations = [{'title': track['name'], 'artist': track['artists'][0]['name'], 'url': track['external_urls']['spotify'], 'preview_url': track['preview_url']} for track in tracks]
-        logger.info(f"Recommended songs for {mbti}: {song_recommendations}")
-        return song_recommendations
+        # 추천 곡 수 설정
+        recommendations = []
+
+        # 장르 선택
+        genres = mbti_genres.get(mbti, ['k-pop'])
+
+        # MBTI 점수에 따라 추천할 곡 수 비율 설정
+        for genre in genres:
+            results = spotify.search(q=f'genre:{genre} lang:ko tag:popular', type='track', limit=limit)
+            tracks = results['tracks']['items']
+            for track in tracks:
+                recommendations.append({
+                    'title': track['name'],
+                    'artist': track['artists'][0]['name'],
+                    'url': track['external_urls']['spotify'],
+                    'preview_url': track['preview_url']
+                })
+
+            # If no tracks are found for the genre, perform a broader search
+            if not tracks:
+                logger.warning(f"No tracks found for genre: {genre}. Expanding search.")
+                results = spotify.search(q=f'genre:{genre}', type='track', limit=limit)
+                tracks = results['tracks']['items']
+                for track in tracks:
+                    recommendations.append({
+                        'title': track['name'],
+                        'artist': track['artists'][0]['name'],
+                        'url': track['external_urls']['spotify'],
+                        'preview_url': track['preview_url']
+                    })
+
+        # If no recommendations found, use a general fallback to k-pop popular songs
+        if not recommendations:
+            logger.warning(f"No recommendations found for MBTI: {mbti}. Using fallback to popular k-pop songs.")
+            results = spotify.search(q='genre:k-pop tag:popular', type='track', limit=limit)
+            tracks = results['tracks']['items']
+            for track in tracks:
+                recommendations.append({
+                    'title': track['name'],
+                    'artist': track['artists'][0]['name'],
+                    'url': track['external_urls']['spotify'],
+                    'preview_url': track['preview_url']
+                })
+
+        logger.info(f"Recommended songs for {mbti}: {recommendations}")
+        return recommendations[:limit]
     except Exception as e:
         logger.error("Error during song recommendation: %s", str(e))
         return []
@@ -139,7 +178,7 @@ async def predict(file: UploadFile = File(...), temperature: float = 1.0):
     try:
         prediction = predict_image(image, temperature)
         highest_mbti = max(prediction, key=prediction.get)
-        song_recommendations = recommend_songs(highest_mbti)
+        song_recommendations = recommend_songs(highest_mbti, prediction)
         return JSONResponse(content={"predicted_probabilities": prediction, "song_recommendations": song_recommendations})
     except RuntimeError as e:
         logger.error("Prediction failed: %s", str(e))
@@ -152,3 +191,6 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error("Error starting the server: %s", str(e))
         raise
+
+
+

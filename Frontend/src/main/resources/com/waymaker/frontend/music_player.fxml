@@ -13,5 +13,5 @@
         <Button fx:id="nextButton" text="⏭"/>
         <Button fx:id="repeatButton" text="🔁"/>
     </HBox>
-    <Label fx:id="currentSongLabel" text="현재 재생 중:"/>
+    <Label fx:id="currentSongLabel" text="현재 재생 중:" style="-fx-background-color: transparent;"/>
 </VBox>
